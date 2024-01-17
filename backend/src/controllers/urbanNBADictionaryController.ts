@@ -10,7 +10,6 @@ export class UrbanNBADictionaryController {
             const response = await this.urbanNBADictionary.getCombinedData(req?.query?.id as string)
             return res.status(200).json(response)
         } catch (error) {
-            console.log(error)
             return res.status(400).json(error)
         }
     }
@@ -20,7 +19,6 @@ export class UrbanNBADictionaryController {
             const response = await this.urbanNBADictionary.getAllTeams(req?.query?.page as string)
             return res.status(200).json(response)
         } catch (error) {
-            console.log(error)
             return res.status(400).json(error)
         }
     }
