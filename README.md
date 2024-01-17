@@ -89,9 +89,9 @@ npm run test
 
 
 ## Features
-This project has two endpoints:
-##### Get
+This project has two endpoints (You can find the Postman Collection on this link: https://www.postman.com/avionics-administrator-56015869/workspace/assignment/collection/15231778-185d4008-468d-46c6-92ab-f2b2dffcbaa4?action=share&creator=15231778):
 
+##### Get
 ``getTeam`` endpoint is to get a specific team throught the id. The page number ``id`` is passed to the endpoint as a parameter. The result is an aggregated response with the team details and a bunch of definitions in Urban Dictionary about the team.
 ```sh
 http://localhost:3000/getTeam?page=${id}
@@ -125,7 +125,6 @@ Expected Response
 ```
 
 ##### Get
-
 ``getAllTeams`` endpoint is to get all the teams. The page number ``pageNumber`` is passed to the endpoint as a parameter.
 ```sh
 http://localhost:3000/getAllTeams?page=${pageNumber}
