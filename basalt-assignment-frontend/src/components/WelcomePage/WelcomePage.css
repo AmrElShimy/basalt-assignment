@@ -1,0 +1,25 @@
+/* src/components/WelcomePage.css */
+.welcome-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    /* Adjust the background color as needed */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1000;
+}
+
+.welcome-page.visible {
+    opacity: 1;
+}
+
+.welcome-page.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
