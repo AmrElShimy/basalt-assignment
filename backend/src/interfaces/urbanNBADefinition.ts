@@ -1,3 +1,5 @@
+import { UrbanDictionaryDefinition } from './urbanDictionaryDefinition'
+
 export type UrbanNBADefinition = {
     id: number
     abbreviation: string
@@ -6,5 +8,5 @@ export type UrbanNBADefinition = {
     division: string
     full_name: string
     name: string
-    urbanDictionaryDefinitions: UrbanNBADefinition[]
+    urbanDictionaryDefinitions: UrbanDictionaryDefinition[]
 }
