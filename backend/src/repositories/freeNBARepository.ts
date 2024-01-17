@@ -2,6 +2,12 @@ import axios from 'axios'
 import { Meta, TeamNBA } from '../interfaces'
 
 export class FreeNBARepository {
+    /*
+        Function name: getAllTeams
+        params: page => string
+        Description: This function takes a page number as a parameter and returns a list of teams. It directly calls the
+        freeNBA API.
+    */
     getAllTeams = async (page: string): Promise<{ data: TeamNBA[]; meta: Meta }> => {
         const options = {
             method: 'GET',
@@ -21,6 +27,12 @@ export class FreeNBARepository {
         }
     }
 
+    /*
+        Function name: getSpecificTeam
+        params: id => string
+        return: TeamNBA
+        Description: This function takes an id as a parameter and find the team corresponding to the id. It directly calls the freeNBA API.
+    */
     getSpecificTeam = async (id: string): Promise<TeamNBA> => {
         const options = {
             method: 'GET',

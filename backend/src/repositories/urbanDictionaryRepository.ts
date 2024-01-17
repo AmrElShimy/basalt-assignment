@@ -1,6 +1,12 @@
 import axios from 'axios'
 
 export class UrbanDictionaryRepository {
+    /*
+    Function name: getDefinition
+    params: term => string
+    Description: This function takes a term as a parameter and finds definitions on Urban Dictionary. It calls the
+    Urban Dictionary API directly.
+    */
     getDefinition = async (term: string) => {
         const options = {
             method: 'GET',
