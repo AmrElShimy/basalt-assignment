@@ -10,6 +10,7 @@ The aggregate response coming from the backend of the project is the team detail
 
 ## Table of Contents
 - [Installation](#installation)
+- [Running the Project](#running-the-project)
 - [Testing](#testing)
 - [Features](#features)
 - [Notes](#notes)
@@ -17,6 +18,11 @@ The aggregate response coming from the backend of the project is the team detail
 ## Installation
 
 This project has two sections that need to be setup seperately, an Express.js server and a small React application.
+
+Firstly in the root directory, run: 
+```sh
+npm install
+```
 
 For the backend:
 ```sh
