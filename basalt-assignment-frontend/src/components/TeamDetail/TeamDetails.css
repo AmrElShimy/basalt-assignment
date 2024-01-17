@@ -1,0 +1,20 @@
+/* src/components/TeamDetails.css */
+.card {
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
