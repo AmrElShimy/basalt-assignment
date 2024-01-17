@@ -6,7 +6,7 @@ export type UrbanDictionaryDefinition = {
     word: string
     defid: number
     current_vote: string
-    written_on: Date
+    written_on: string
     example: string
     thumbs_down: number
 }
